@@ -1,3 +1,4 @@
+// rafce : 리액트 기본 구조 불러오기
 import React from 'react';
 
 const TodoList = () => {
