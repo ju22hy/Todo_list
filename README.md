@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# ✅ Todo_list - React 기반 할 일 관리 앱
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 프로젝트는 React의 기초 개념을 익히기 위한 실습으로,  
+할 일 목록을 추가, 삭제, 수정할 수 있는 간단한 Todo 애플리케이션입니다.  
+컴포넌트 구조화, 상태 관리, 조건부 렌더링 등 React의 주요 개념을 연습했습니다.
 
-## Available Scripts
+## 💡 주요 기능
+- 할 일 추가 / 삭제 / 수정
+- 수정 모드 진입 시 해당 항목이 입력창으로 변경됨
+- 항목마다 고유 ID 부여 (uuid 사용)
+- 컴포넌트 기반 구조로 기능 분리 및 재사용 가능
 
-In the project directory, you can run:
+## 🛠️ 사용 기술
+- React (useState)
+- Props 전달 & 상태 관리
+- 조건부 렌더링
+- Tailwind CSS (UI 스타일링)
+- uuid (고유 ID 생성)
 
-### `npm start`
+## 📁 폴더 구조
+📂src 
+┣ 📂components 
+  ┣ Edit.jsx // 할 일 수정 입력창 
+  ┣ Form.jsx // 새 할 일 입력창 
+  ┣ Todo.jsx // 단일 할 일 출력 
+  ┗ TodoList.jsx // 전체 로직 포함한 메인 컴포넌트 
+┣ App.js // 컴포넌트 통합 
+┗ index.js // 렌더링 시작점
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 💬 회고
+- 컴포넌트를 기능별로 나누어 관리하면서 코드를 구조적으로 정리해보려 했습니다.
+- `isEdit`같이 값을 활용한 조건부 렌더링을 스터디했습니다.
+- 상태를 하위 컴포넌트로 전달하고, 하위 컴포넌트에서 다시 이벤트를 상위로 전달하는 방식이 처음엔 헷갈렸지만 점점 익숙해졌습니다.
