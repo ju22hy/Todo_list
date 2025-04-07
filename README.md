@@ -18,7 +18,16 @@
 - uuid (고유 ID 생성)
 
 ## 📁 폴더 구조
-<pre> ``` 📂 src ┣ 📂components ┃ ┣ 📜 Edit.jsx // 할 일 수정 입력창 ┃ ┣ 📜 Form.jsx // 새 할 일 입력창 ┃ ┣ 📜 Todo.jsx // 단일 할 일 출력 ┃ ┗ 📜 TodoList.jsx // 전체 로직 포함한 메인 컴포넌트 ┣ 📜 App.js // 컴포넌트 통합 ┗ 📜 index.js // 렌더링 시작점 ``` </pre>
+``` 
+📂 src 
+  ┣ 📂components 
+  ┃ ┣ Edit.jsx // 할 일 수정 입력창 
+  ┃ ┣ Form.jsx // 새 할 일 입력창 
+  ┃ ┣ Todo.jsx // 단일 할 일 출력 
+  ┃ ┗ TodoList.jsx // 전체 로직 포함한 메인 컴포넌트 
+  ┣ App.js // 컴포넌트 통합 
+  ┗ index.js // 렌더링 시작점 
+``` 
 
 ## 💬 회고
 - 컴포넌트를 기능별로 나누어 관리하면서 코드를 구조적으로 정리해보려 했습니다.
